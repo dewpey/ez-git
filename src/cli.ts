@@ -39,8 +39,7 @@ switch (command) {
       exit(1)
     } 
     shell.echo("update")
-    shell.exec("git add .")
-    shell.exec("git stage -a")
+    shell.exec("git stage -A")
     shell.exec(`git commit -m ${arg}`)
     shell.exec("git push")
 
