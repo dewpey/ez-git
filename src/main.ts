@@ -55,6 +55,8 @@ switch (command) {
     break
   case 'refresh':
     shell.exec('git pull')
+
+    shell.echo('We will just run: git pull')
     break
   case 'fix':
     shell.exec('git fetch origin')
